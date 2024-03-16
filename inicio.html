@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oleo+Script"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Instagram</title>
+  </head>
+  <body>
+  
+
+    <nav class="navbar fixed-top navbar-light" style="background-color: lightblue;" >
+        <div class="container-logo">
+            <img class="logo" src="./imagenes/instagram.png"></img>
+            <span class="navbar-brand mb-0 ml-5 h1" id="Main-logo">  Instagram</span>
+        </div>
+    
+      Hecho por Jonatan
+      <form class="form-inline">
+        <button
+          data-toggle="modal"
+          data-target="#exampleModal"
+          class="btn btn-success"
+          id="success"
+          type="button"
+          style="background-color: black;"
+        >
+          Crear un nuevo post
+        </button>
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn btn-light dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-cog"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">Configuración</a>
+            <a class="dropdown-item" href="#">Cuenta</a>
+            <div class="dropdown-divider" style="background-color: black;"></div>
+            <a class="dropdown-item" href="#" id="close">Cerrar sesión</a>
+          </div>
+        </div>
+      </form>
+    </nav>
+
+
+    <nav aria-label="Page navigation example" class="margen">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link text-secondary" href="index.html" id="desktop">
+            <img src="./imagenes/desktop.png" style="width: 25px; height: 25px;" alt=""></a>
+        </li>
+        <li class="page-item" id="mobile">
+          <a class="page-link text-secondary" href="inicio.html"><img src="./imagenes/mobile-phone.png" style="width: 25px; height: 25px;" alt=""></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="card">
+      <div class="card-header">
+        <h4 class="titulo">Hermosa vista</h4>
+        <button type="button" class="btn btn-link">21/01</button>
+      </div>
+      <img
+        src="../imagenes/golfito1.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">2190 Likes</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
+          elit ornare, interdum libero id, ultrices sem. Duis molestie elementum
+          ipsum et eleifend. Nunc porta.
+        </p>
+        <button id="heart-reaction" type="button" class="btn btn-light btn-sm" style="border: none;">
+          <i class="far fa-heart" ></i>
+        </button>
+        <input
+          type="text"
+          class="form-control comentario"
+          id="recipient-name"
+          value="Escriba un comentario..."
+        />
+        <button type="button" class="btn btn-light btn-sm">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h4 class="titulo">Golfito 😍</h4>
+        <button type="button" class="btn btn-link">Today</button>
+      </div>
+      <img
+        src="../imagenes/golfito2.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">2.5M Likes</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
+          elit ornare, interdum libero id, ultrices sem. Duis molestie elementum
+          ipsum et eleifend. Nunc porta.
+        </p>
+        <button id="heart-reaction" style="border: none;" type="button" class="btn btn-light btn-sm">
+          <i class="far fa-heart"></i>
+        </button>
+        <input
+          type="text"
+          class="form-control comentario"
+          id="recipient-name"
+          value="Escriba un comentario..."
+        />
+        <button type="button" class="btn btn-light btn-sm">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h4 class="titulo">Un lindo día ⛱️</h4>
+        <button type="button" class="btn btn-link">15/03</button>
+      </div>
+      <img
+        src="../imagenes/golfito3.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">9200 Likes</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
+          elit ornare, interdum libero id, ultrices sem. Duis molestie elementum
+          ipsum et eleifend. Nunc porta.
+        </p>
+        <button id="heart-reaction" style="border: none;" type="button" class="btn btn-light btn-sm">
+          <i class="far fa-heart"></i>
+        </button>
+        <input
+          type="text"
+          class="form-control comentario"
+          id="recipient-name"
+          value="Escriba un comentario..."
+        />
+        <button type="button" class="btn btn-light btn-sm">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </div>
+    </div>
+    <div class="card">
+
+
+      <div class="card-header">
+        <h4 class="titulo">Amanecer en la playa 🌊</h4>
+        <button type="button" class="btn btn-link">12/05</button>
+      </div>
+      <img
+        src="../imagenes/golfito4.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">3K Likes</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+          voluptas doloribus dolores amet rerum eum dolor. Amet, excepturi?
+          Cupiditate odit est vel magni quidem velit vero consectetur facere
+          fuga eaque.
+        </p>
+        <button id="heart-reaction" style="border: none;" type="button" class="btn btn-light btn-sm">
+          <i class="far fa-heart"></i>
+        </button>
+        <input
+          type="text"
+          class="form-control comentario"
+          id="recipient-name"
+          value="Escriba un comentario..."
+        />
+        <button type="button" class="btn btn-light btn-sm">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </div>
+    </div>
+    
+
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="form-group">
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+            <button type="button" class="btn btn-light btn-sm">
+              <i class="fas fa-camera"></i>
+            </button>
+            <button type="button" class="btn btn-light btn-sm">
+              <i class="fas fa-map-marker-alt"></i>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-success">Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
