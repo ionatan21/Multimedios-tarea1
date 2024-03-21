@@ -28,21 +28,21 @@
     <title>Copia Instagram</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-light" style="background-color: rgb(221, 230, 233);">
+    <nav class="navbar fixed-top navbar-light" id="barra_superior">
       <div class="container-logo">
-        <img class="logo" src="./imagenes/instagram.png"/>
-        <span class="navbar-brand mb-0 ml-5 h1" id="Main-logo">  Instagram</span>
+        <img class="logo" src="./imagenes/instagram.png" />
+        <span class="navbar-brand mb-0 ml-5 h1" id="Main-logo"> Instagram</span>
       </div>
 
-      <strong style="padding-left: 50px;">Hecho por Jonatan</strong>
-      <form class="form-inline" style="padding-inline: 20px; ">
+      <strong class="author" style="padding-left: 50px">Hecho por Jonatan</strong>
+      <form class="form-inline">
         <button
           data-toggle="modal"
           data-target="#exampleModal"
           class="btn btn-success"
           id="success"
           type="button"
-          style="margin-right: 10px ; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.788); border: none;">
+        >
           Crear un nuevo post
         </button>
         <div class="btn-group">
@@ -53,10 +53,14 @@
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
-            style="background-image: url(./imagenes/user-gear-solid.svg); width: 30px; height: 30px; overflow: hidden; background-repeat: no-repeat;"
-          >
-          
-          </button>
+            style="
+              background-image: url(./imagenes/user-gear-solid.svg);
+              width: 30px;
+              height: 30px;
+              overflow: hidden;
+              background-repeat: no-repeat;
+            "
+          ></button>
           <div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="#">Configuración</a>
             <a class="dropdown-item" href="#">Cuenta</a>
@@ -67,19 +71,18 @@
       </form>
     </nav>
 
-
     <nav aria-label="Page navigation example" class="margen">
       <ul class="pagination justify-content-center">
-        <li class="page-item">
-          <a class="page-link text-secondary" href="index.html" id="desktop">
+        <li class="page-item" id="link_pc"> 
+          <a class="page-link text-secondary" href="Pc.html" id="desktop">
             <img
               src="./imagenes/desktop.png"
               style="width: 25px; height: 25px"
               alt=""
           /></a>
         </li>
-        <li class="page-item" id="mobile" style="opacity: 0.7;">
-          <a class="page-link text-secondary" href="inicio.html"
+        <li class="page-item" id="mobile" style="opacity: 0.7">
+          <a class="page-link text-secondary" href="mobile.html"
             ><img
               src="./imagenes/mobile-phone.png"
               style="width: 25px; height: 25px"
@@ -90,7 +93,7 @@
     </nav>
 
     <section class="photos">
-      <div class="card" style="margin-top: 150px;">
+      <div class="card">
         <div class="card-header">
           <h4 class="titulo">Hermosa vista</h4>
           <button type="button" class="btn btn-link">21/01</button>
@@ -100,15 +103,15 @@
           <h5 class="card-title">2190 Likes</h5>
           <p class="card-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
-            elit ornare, interdum libero id, ultrices sem. Duis molestie elementum
-            ipsum et eleifend. Nunc porta.
+            elit ornare, interdum libero id, ultrices sem. Duis molestie
+            elementum ipsum et eleifend. Nunc porta.
           </p>
-  
+
           <button
             id="heart-reaction"
             type="button"
             class="heart-reaction btn btn-light btn-sm"
-            style="border: none; outline: none; "
+            style="border: none; outline: none"
           >
             <img
               class="heart-icon"
@@ -117,7 +120,7 @@
               style="width: 20px; height: 20px"
             />
           </button>
-  
+
           <input
             type="text"
             class="form-control comment-section"
@@ -139,8 +142,8 @@
           <h5 class="card-title">2.5M Likes</h5>
           <p class="card-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
-            elit ornare, interdum libero id, ultrices sem. Duis molestie elementum
-            ipsum et eleifend. Nunc porta.
+            elit ornare, interdum libero id, ultrices sem. Duis molestie
+            elementum ipsum et eleifend. Nunc porta.
           </p>
           <button
             id="heart-reaction"
@@ -176,8 +179,8 @@
           <h5 class="card-title">9200 Likes</h5>
           <p class="card-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
-            elit ornare, interdum libero id, ultrices sem. Duis molestie elementum
-            ipsum et eleifend. Nunc porta.
+            elit ornare, interdum libero id, ultrices sem. Duis molestie
+            elementum ipsum et eleifend. Nunc porta.
           </p>
           <button
             id="heart-reaction"
@@ -241,11 +244,19 @@
           </button>
         </div>
       </div>
-
     </section>
- 
-    <footer style="align-items: center; position: absolute; width: 100%; justify-content: space-around; left: 50%; transform:  translate(-17%);; ">
-      Hecho por Jonatan. Copyright © Todos los derechos reservados
+
+    <footer
+      style="
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        justify-content: space-around;
+        text-wrap: wrap;
+      "
+      class="custom_footer"
+    >
+      Hecho por Jonatan. 2024 Copyright © <br> Todos los derechos reservados
     </footer>
 
     <div

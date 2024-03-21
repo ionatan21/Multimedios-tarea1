@@ -1,170 +1,440 @@
-.navbar-brand {
-  font-family: "Oleo Script", cursive;
-  font-size: 28px;
-}
 
-#desktop {
-  opacity: 0.5;
-}
-#mobile {
-  opacity: 0.5;
-   
-}
 
-#paginacion_device{
+
+@media only screen and (max-width: 600px) {
+
+  body{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+  }
+
+  img{
+    height: 180px;
+  }
+
+  #recipient-name{
+    max-width: 80%;
+    color: black;
+  }
+
+  .custom_footer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-wrap: wrap;
+    text-align: center;
+    width: 200px;
+    padding: 25px;
+  }
+
+  .photos{
+    position: relative;
+    height: 100%;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .container-logo {
+    display: flex;
+
+  }
+
+  .author{
+    display: none;
+  }
+
+  #Main-logo{
+    display: none;
+  }
+
+  #barra_superior{
+    display: flex;
+    position: sticky;
+    width: 100%;
+    background-color: rgb(221, 230, 233);
+  }
+
+  .navbar-brand {
+    font-family: "Oleo Script", cursive;
+    font-size: 19px;
+  }
   
-  width: 100px;
-  box-shadow: 0px 10px 10px gray;
-}
+  #desktop {
+    opacity: 0.5;
+  }
+  #mobile {
+    opacity: 0.5;   
+  }
+  
+  #paginacion_device{
+    
+    width: 100px;
+    box-shadow: 0px 10px 10px gray;
+  }
+  
+  #desktop:hover {
+    scale: 1.1;
+    opacity: 2;
+  
+  }
+  #mobile:hover {
+    scale: 1.1;
+    opacity: 2;
+  }
+  
+  .navbar {
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .titulo {
+    display: inline-block;
+  }
+  .btn-link {
+    float: right;
+    color: gray;
+    padding-right: 0px;
+  }
+  .card-body {
+    padding: 10px;
+  }
+  
+  
+  button {
+    outline: none;
+  }
+  
+  .comment-section {
+    color: #ffffff;
+    display: inline-block;
+    width: 88%;
+    border: 1px solid gray;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  #Main-logo:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+  
+  .logo:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+  #success{
+    margin-right: 5px;
+    height: 30px;
+    font-size: 12px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.788);
+    border: none;
+  }
 
-#desktop:hover {
-  scale: 1.1;
-  opacity: 2;
-
-}
-#mobile:hover {
-  scale: 1.1;
-  opacity: 2;
-}
-
-#Main-logo {
-  display: inline-flex;
-}
-
-.navbar {
-  border-bottom: 1px solid lightgray;
-}
-
-.card-header {
-  padding: 0.75rem 15px;
-}
-.titulo {
-  display: inline-block;
-}
-.btn-link {
-  float: right;
-  color: gray;
-  padding-right: 0px;
-}
-.card-body {
-  padding: 15px;
-}
-
-body{
-  background-color: aliceblue;
-}
-
-button {
-  outline: none;
-}
-
-.comment-section {
-  color: #ffffff;
-  display: inline-block;
-  width: 88%;
-  border: 1px solid gray;
-  outline: none;
-  box-shadow: none;
-}
-
-#Main-logo:hover {
-  scale: 1.1;
-  cursor: pointer;
-}
-
-.logo:hover {
-  scale: 1.1;
-  cursor: pointer;
-}
-
-#success:hover {
-  scale: 1.03;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-img {
-  width: 100%;
-  height: 255px;
-  display: block;
-  padding: 3px;
-}
-
-
-.row img:hover {
-  scale: 1.02;
-  z-index: 100;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#cancel-button:hover {
-  scale: 1.05;
-}
-
-#publicar-btn:hover {
-  scale: 1.05;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-#heart-reaction {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  scale: 1.2;
-  box-shadow: none;
-}
-
-#heart-reaction:focus {
+  #success:hover {
+    scale: 1.03;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    padding: 3px;
+  }
+  
+  
+  .row img:hover {
+    scale: 1.02;
+    z-index: 100;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #cancel-button:hover {
+    scale: 1.05;
+  }
+  
+  #publicar-btn:hover {
+    scale: 1.05;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #heart-reaction {
     background-color: transparent;
     border: none;
     outline: none;
+    scale: 1.2;
+    box-shadow: none;
+  }
+  
+  #heart-reaction:focus {
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  
+  
+  #heart-reaction:hover img {
+    scale: 1.2;
+  }
+  
+  #close:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  .logo {
+    width: 30px;
+    height: 30px;
   }
 
 
-#heart-reaction:hover img {
-  scale: 1.2;
+  .margen {
+    display: none;
+  }
+  
+  .seg-ter {
+    margin-top: 5px;
+  }
+  
+  .card {
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  
+  #settings:hover{
+  scale: 1.1;
+  }
+  
 }
 
-#close:hover {
-  background-color: red;
-  color: white;
-}
 
-.logo {
-  width: 30px;
-  height: 30px;
-}
-.container-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.margen {
-  position: fixed;
-  top: 15%;
-  left: 50%;
-  z-index: 100;
-  transform:  translate(-50%, -15%);
-}
 
-.seg-ter {
-  margin-top: 5px;
-}
 
-.card {
-  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
-  margin: 45px auto;
-  width: 600px;
-}
 
-.photos{
-  margin-top: 70px;
-  height: 100%;
-  padding-bottom: 20px;
-}
 
-#settings:hover{
-scale: 1.1;
+
+@media only screen and (min-width: 600px) {
+
+  body{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+  }
+
+  .navbar-brand {
+    font-family: "Oleo Script", cursive;
+    font-size: 28px;
+  }
+
+  .custom_footer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-wrap: wrap;
+    text-align: center;
+    width: 200px;
+  }
+
+  
+  #desktop {
+    opacity: 0.5;
+  }
+  #mobile {
+    opacity: 0.5;   
+  }
+  
+  #paginacion_device{
+    
+    width: 100px;
+    box-shadow: 0px 10px 10px gray;
+  }
+  
+  #desktop:hover {
+    scale: 1.1;
+    opacity: 2;
+  
+  }
+  #mobile:hover {
+    scale: 1.1;
+    opacity: 2;
+  }
+  
+  #Main-logo {
+    display: inline-flex;
+  }
+  
+  .navbar {
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .card-header {
+    padding: 0.75rem 15px;
+  }
+  .titulo {
+    display: inline-block;
+  }
+  .btn-link {
+    float: right;
+    color: gray;
+    padding-right: 0px;
+  }
+  .card-body {
+    padding: 15px;
+  }
+  
+  
+  button {
+    outline: none;
+  }
+  #success{
+    margin-right: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.788);
+    border: none;
+  }
+
+  .form-inline{
+    padding-inline: 20px;
+  }
+  
+
+
+  .comment-section {
+    color: #ffffff;
+    display: inline-block;
+    width: 88%;
+    border: 1px solid gray;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  #Main-logo:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+
+  #barra_superior{
+    display: inline-flex;
+    position: sticky;
+    width: 100%;
+    background-color: rgb(221, 230, 233);
+    font-size: 12px;
+  }
+
+
+  .logo:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+  
+  #success:hover {
+    scale: 1.03;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  img {
+    width: 100%;
+    height: 255px;
+    display: block;
+    padding: 3px;
+  }
+  
+  
+  .row img:hover {
+    scale: 1.02;
+    z-index: 100;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #cancel-button:hover {
+    scale: 1.05;
+  }
+  
+  #publicar-btn:hover {
+    scale: 1.05;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #heart-reaction {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    scale: 1.2;
+    box-shadow: none;
+  }
+  
+  #heart-reaction:focus {
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  
+  
+  #heart-reaction:hover img {
+    scale: 1.2;
+  }
+  
+  #close:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+  .container-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .margen {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    z-index: 100;
+    transform:  translate(-50%, -15%);
+  }
+  
+  .seg-ter {
+    margin-top: 5px;
+  }
+  
+  .card {
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
+    margin: 45px auto;
+    width: 600px;
+  }
+  
+  .photos{
+    margin-top: 70px;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  
+  #settings:hover{
+  scale: 1.1;
+  }
+
 }
