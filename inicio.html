@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -25,43 +24,43 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Instagram</title>
+
+    <title>Copia Instagram</title>
   </head>
   <body>
-  
+    <nav class="navbar fixed-top navbar-light" style="background-color: rgb(221, 230, 233);">
+      <div class="container-logo">
+        <img class="logo" src="./imagenes/instagram.png"/>
+        <span class="navbar-brand mb-0 ml-5 h1" id="Main-logo">  Instagram</span>
+      </div>
 
-    <nav class="navbar fixed-top navbar-light" style="background-color: lightblue;" >
-        <div class="container-logo">
-            <img class="logo" src="./imagenes/instagram.png"></img>
-            <span class="navbar-brand mb-0 ml-5 h1" id="Main-logo">  Instagram</span>
-        </div>
-    
-      Hecho por Jonatan
-      <form class="form-inline">
+      <strong style="padding-left: 50px;">Hecho por Jonatan</strong>
+      <form class="form-inline" style="padding-inline: 20px; ">
         <button
           data-toggle="modal"
           data-target="#exampleModal"
           class="btn btn-success"
           id="success"
           type="button"
-          style="background-color: black;"
-        >
+          style="margin-right: 10px ; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.788); border: none;">
           Crear un nuevo post
         </button>
         <div class="btn-group">
           <button
+            id="settings"
             type="button"
-            class="btn btn-light dropdown-toggle"
+            class="btn btn-light"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
+            style="background-image: url(./imagenes/user-gear-solid.svg); width: 30px; height: 30px; overflow: hidden; background-repeat: no-repeat;"
           >
-            <i class="fas fa-cog"></i>
+          
           </button>
           <div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="#">Configuración</a>
             <a class="dropdown-item" href="#">Cuenta</a>
-            <div class="dropdown-divider" style="background-color: black;"></div>
+            <div class="dropdown-divider" style="background-color: black"></div>
             <a class="dropdown-item" href="#" id="close">Cerrar sesión</a>
           </div>
         </div>
@@ -73,143 +72,181 @@
       <ul class="pagination justify-content-center">
         <li class="page-item">
           <a class="page-link text-secondary" href="index.html" id="desktop">
-            <img src="./imagenes/desktop.png" style="width: 25px; height: 25px;" alt=""></a>
+            <img
+              src="./imagenes/desktop.png"
+              style="width: 25px; height: 25px"
+              alt=""
+          /></a>
         </li>
-        <li class="page-item" id="mobile">
-          <a class="page-link text-secondary" href="inicio.html"><img src="./imagenes/mobile-phone.png" style="width: 25px; height: 25px;" alt=""></a>
+        <li class="page-item" id="mobile" style="opacity: 0.7;">
+          <a class="page-link text-secondary" href="inicio.html"
+            ><img
+              src="./imagenes/mobile-phone.png"
+              style="width: 25px; height: 25px"
+              alt=""
+          /></a>
         </li>
       </ul>
     </nav>
 
-    <div class="card">
-      <div class="card-header">
-        <h4 class="titulo">Hermosa vista</h4>
-        <button type="button" class="btn btn-link">21/01</button>
+    <section class="photos">
+      <div class="card" style="margin-top: 150px;">
+        <div class="card-header">
+          <h4 class="titulo">Hermosa vista</h4>
+          <button type="button" class="btn btn-link">21/01</button>
+        </div>
+        <img src="../imagenes/golfito1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">2190 Likes</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
+            elit ornare, interdum libero id, ultrices sem. Duis molestie elementum
+            ipsum et eleifend. Nunc porta.
+          </p>
+  
+          <button
+            id="heart-reaction"
+            type="button"
+            class="heart-reaction btn btn-light btn-sm"
+            style="border: none; outline: none; "
+          >
+            <img
+              class="heart-icon"
+              src="./imagenes/heart-regular.svg"
+              alt="icon"
+              style="width: 20px; height: 20px"
+            />
+          </button>
+  
+          <input
+            type="text"
+            class="form-control comment-section"
+            id="recipient-name"
+            value="Deja un comentario..."
+          />
+          <button type="button" class="btn btn-light btn-sm">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </div>
       </div>
-      <img
-        src="../imagenes/golfito1.jpg"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h5 class="card-title">2190 Likes</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
-          elit ornare, interdum libero id, ultrices sem. Duis molestie elementum
-          ipsum et eleifend. Nunc porta.
-        </p>
-        <button id="heart-reaction" type="button" class="btn btn-light btn-sm" style="border: none;">
-          <i class="far fa-heart" ></i>
-        </button>
-        <input
-          type="text"
-          class="form-control comentario"
-          id="recipient-name"
-          value="Escriba un comentario..."
-        />
-        <button type="button" class="btn btn-light btn-sm">
-          <i class="fas fa-ellipsis-v"></i>
-        </button>
+      <div class="card">
+        <div class="card-header">
+          <h4 class="titulo">Golfito 😍</h4>
+          <button type="button" class="btn btn-link">Today</button>
+        </div>
+        <img src="../imagenes/golfito2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">2.5M Likes</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
+            elit ornare, interdum libero id, ultrices sem. Duis molestie elementum
+            ipsum et eleifend. Nunc porta.
+          </p>
+          <button
+            id="heart-reaction"
+            type="button"
+            class="heart-reaction btn btn-light btn-sm"
+            style="border: none"
+          >
+            <img
+              class="heart-icon"
+              src="./imagenes/heart-regular.svg"
+              alt="icon"
+              style="width: 20px; height: 20px"
+            />
+          </button>
+          <input
+            type="text"
+            class="form-control comment-section"
+            id="recipient-name"
+            value="Deja un comentario..."
+          />
+          <button type="button" class="btn btn-light btn-sm">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <h4 class="titulo">Golfito 😍</h4>
-        <button type="button" class="btn btn-link">Today</button>
+      <div class="card">
+        <div class="card-header">
+          <h4 class="titulo">Un lindo día ⛱️</h4>
+          <button type="button" class="btn btn-link">15/03</button>
+        </div>
+        <img src="../imagenes/golfito3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">9200 Likes</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
+            elit ornare, interdum libero id, ultrices sem. Duis molestie elementum
+            ipsum et eleifend. Nunc porta.
+          </p>
+          <button
+            id="heart-reaction"
+            type="button"
+            class="heart-reaction btn btn-light btn-sm"
+            style="border: none"
+          >
+            <img
+              class="heart-icon"
+              src="./imagenes/heart-regular.svg"
+              alt="icon"
+              style="width: 20px; height: 20px"
+            />
+          </button>
+          <input
+            type="text"
+            class="form-control comment-section"
+            id="recipient-name"
+            value="Deja un comentario..."
+          />
+          <button type="button" class="btn btn-light btn-sm">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </div>
       </div>
-      <img
-        src="../imagenes/golfito2.jpg"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h5 class="card-title">2.5M Likes</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
-          elit ornare, interdum libero id, ultrices sem. Duis molestie elementum
-          ipsum et eleifend. Nunc porta.
-        </p>
-        <button id="heart-reaction" style="border: none;" type="button" class="btn btn-light btn-sm">
-          <i class="far fa-heart"></i>
-        </button>
-        <input
-          type="text"
-          class="form-control comentario"
-          id="recipient-name"
-          value="Escriba un comentario..."
-        />
-        <button type="button" class="btn btn-light btn-sm">
-          <i class="fas fa-ellipsis-v"></i>
-        </button>
+      <div class="card">
+        <div class="card-header">
+          <h4 class="titulo">Amanecer en la playa 🌊</h4>
+          <button type="button" class="btn btn-link">12/05</button>
+        </div>
+        <img src="../imagenes/golfito4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">3K Likes</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+            voluptas doloribus dolores amet rerum eum dolor. Amet, excepturi?
+            Cupiditate odit est vel magni quidem velit vero consectetur facere
+            fuga eaque.
+          </p>
+          <button
+            id="heart-reaction"
+            type="button"
+            class="heart-reaction btn btn-light btn-sm"
+            style="border: none"
+          >
+            <img
+              class="heart-icon"
+              src="./imagenes/heart-regular.svg"
+              alt="icon"
+              style="width: 20px; height: 20px"
+            />
+          </button>
+          <input
+            type="text"
+            class="form-control comment-section"
+            id="recipient-name"
+            value="Deja un comentario..."
+          />
+          <button type="button" class="btn btn-light btn-sm">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <h4 class="titulo">Un lindo día ⛱️</h4>
-        <button type="button" class="btn btn-link">15/03</button>
-      </div>
-      <img
-        src="../imagenes/golfito3.jpg"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h5 class="card-title">9200 Likes</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
-          elit ornare, interdum libero id, ultrices sem. Duis molestie elementum
-          ipsum et eleifend. Nunc porta.
-        </p>
-        <button id="heart-reaction" style="border: none;" type="button" class="btn btn-light btn-sm">
-          <i class="far fa-heart"></i>
-        </button>
-        <input
-          type="text"
-          class="form-control comentario"
-          id="recipient-name"
-          value="Escriba un comentario..."
-        />
-        <button type="button" class="btn btn-light btn-sm">
-          <i class="fas fa-ellipsis-v"></i>
-        </button>
-      </div>
-    </div>
-    <div class="card">
 
-
-      <div class="card-header">
-        <h4 class="titulo">Amanecer en la playa 🌊</h4>
-        <button type="button" class="btn btn-link">12/05</button>
-      </div>
-      <img
-        src="../imagenes/golfito4.jpg"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h5 class="card-title">3K Likes</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-          voluptas doloribus dolores amet rerum eum dolor. Amet, excepturi?
-          Cupiditate odit est vel magni quidem velit vero consectetur facere
-          fuga eaque.
-        </p>
-        <button id="heart-reaction" style="border: none;" type="button" class="btn btn-light btn-sm">
-          <i class="far fa-heart"></i>
-        </button>
-        <input
-          type="text"
-          class="form-control comentario"
-          id="recipient-name"
-          value="Escriba un comentario..."
-        />
-        <button type="button" class="btn btn-light btn-sm">
-          <i class="fas fa-ellipsis-v"></i>
-        </button>
-      </div>
-    </div>
-    
-
+    </section>
+ 
+    <footer style="align-items: center; position: absolute; width: 100%; justify-content: space-around; left: 50%; transform:  translate(-17%);; ">
+      Hecho por Jonatan. Copyright © Todos los derechos reservados
+    </footer>
 
     <div
       class="modal fade"
@@ -223,7 +260,11 @@
         <div class="modal-content">
           <div class="modal-body">
             <div class="form-group">
-              <textarea class="form-control" id="message-text"></textarea>
+              <textarea
+                class="form-control"
+                id="message-text"
+                placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+              ></textarea>
             </div>
             <button type="button" class="btn btn-light btn-sm">
               <i class="fas fa-camera"></i>
@@ -234,13 +275,22 @@
           </div>
           <div class="modal-footer">
             <button
+              id="cancel-button"
               type="button"
               class="btn btn-secondary"
               data-dismiss="modal"
+              style="background-color: rgb(190, 36, 36)"
             >
               Cancelar
             </button>
-            <button type="button" class="btn btn-success">Publicar</button>
+            <button
+              type="button"
+              class="btn btn-success"
+              id="publicar-btn"
+              style="background-color: black"
+            >
+              Publicar
+            </button>
           </div>
         </div>
       </div>
@@ -261,5 +311,18 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      document.querySelectorAll(".heart-reaction").forEach((button) => {
+        button.addEventListener("click", function () {
+          const img = this.querySelector(".heart-icon");
+          if (img.getAttribute("src") === "./imagenes/heart-regular.svg") {
+            img.setAttribute("src", "./imagenes/heart-solid.svg");
+          } else {
+            img.setAttribute("src", "./imagenes/heart-regular.svg");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

@@ -27,33 +27,34 @@
   </head>
   <body>
     <!-- Barra de navegación -->
-    <nav class="navbar fixed-top navbar-light" style="background-color: lightblue;">
-        <div class="container-logo">
-            <img class="logo" src="./imagenes/instagram.png"></img>
-            <span class="navbar-brand mb-0 ml-5 h1" id="Main-logo">  Instagram</span>
-        </div>
-    
-      Hecho por Jonatan
-      <form class="form-inline">
+    <nav class="navbar fixed-top navbar-light" style="background-color: rgb(221, 230, 233);">
+      <div class="container-logo">
+        <img class="logo" src="./imagenes/instagram.png"/>
+        <span class="navbar-brand mb-0 ml-5 h1" id="Main-logo">  Instagram</span>
+      </div>
+
+      <strong style="padding-left: 50px;">Hecho por Jonatan</strong>
+      <form class="form-inline" style="padding-inline: 20px; ">
         <button
           data-toggle="modal"
           data-target="#exampleModal"
           class="btn btn-success"
           id="success"
           type="button"
-          style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255)"
-        >
+          style="margin-right: 10px ; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.788); border: none;">
           Crear un nuevo post
         </button>
         <div class="btn-group">
           <button
+            id="settings"
             type="button"
-            class="btn btn-light dropdown-toggle"
+            class="btn btn-light"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
+            style="background-image: url(./imagenes/user-gear-solid.svg); width: 30px; height: 30px; overflow: hidden; background-repeat: no-repeat;"
           >
-            <i class="fas fa-cog"></i>
+          
           </button>
           <div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="#">Configuración</a>
@@ -66,10 +67,10 @@
     </nav>
 
     <nav aria-label="Page navigation example" class="margen">
-      <ul class="pagination justify-content-center">
+      <ul class="pagination justify-content-center" id="paginacion_device">
         <li class="page-item" id="desktop">
           <a class="page-link text-secondary" href="index.html">
-            <img src="./imagenes/desktop.png" style="width: 25px; height: 25px;" alt="">
+            <img class="heart-reaction" src="./imagenes/desktop.png" style="width: 25px; height: 25px;" alt="">
           </a>
         </li>
         <li class="page-item" id="mobile">
@@ -78,45 +79,52 @@
       </ul>
     </nav>
 
-    <div class="container-fluid" id="container1">
-      <div class="row">
-        <div class="col px-0 ml-1" id="col1">
-          <img src="imagenes/golfito1.jpg" />
+    <section style="margin-top: 150px;">
+      <div class="container-fluid" id="container1">
+        <div class="row">
+          <div class="col px-0 ml-1" id="col1"  ">
+          <img src="imagenes/golfito1.jpg" style="border-radius: 5%; overflow: hidden;" />
         </div>
         <div class="col px-0" id="col2">
-          <img src="imagenes/golfito2.jpg" />
+          <img src="imagenes/golfito2.jpg" style="border-radius: 5%; overflow: hidden;"/>
         </div>
         <div class="col px-0" id="col3">
-          <img src="imagenes/golfito3.jpg" />
+          <img src="imagenes/golfito3.jpg" style="border-radius: 5%; overflow: hidden;"/>
+</div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid seg-ter" id="container2">
-      <div class="row">
-        <div class="col px-0 ml-1" id="col4">
-          <img src="imagenes/golfito4.jpg" />
-        </div>
-        <div class="col px-0" id="col5">
-          <img src="imagenes/golfito5.jpg" />
-        </div>
-        <div class="col px-0" id="col6">
-          <img src="imagenes/golfito6.jpg" />
+      </div>
+
+      <div class="container-fluid seg-ter" id="container2">
+        <div class="row">
+          <div class="col px-0 ml-1" id="col4">
+            <img src="imagenes/golfito4.jpg" style="border-radius: 5%;"/>
+          </div>
+          <div class="col px-0" id="col5">
+            <img src="imagenes/golfito5.jpg" style="border-radius: 5%;"/>
+          </div>
+          <div class="col px-0" id="col6">
+            <img src="imagenes/golfito6.jpg" style="border-radius: 5%;"/>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid seg-ter" id="container3">
-      <div class="row">
-        <div class="col px-0 ml-1" id="col7">
-          <img src="imagenes/golfito7.jpg" />
-        </div>
-        <div class="col px-0" id="col8">
-          <img src="imagenes/golfito8.jpg" />
-        </div>
-        <div class="col px-0" id="col9">
-          <img src="imagenes/golfito9.jpg" />
+
+      <div class="container-fluid seg-ter" id="container3">
+        <div class="row">
+          <div class="col px-0 ml-1" id="col7">
+            <img src="imagenes/golfito7.jpg" style="border-radius: 5%;"/>
+          </div>
+          <div class="col px-0" id="col8">
+            <img src="imagenes/golfito8.jpg" style="border-radius: 5%;"/>
+          </div>
+          <div class="col px-0" id="col9">
+            <img src="imagenes/golfito9.jpg" style="border-radius: 5%;"/>
+          </div>
         </div>
       </div>
-    </div>
+
+    </section>
+
 
     <div
       class="modal fade"
@@ -144,7 +152,7 @@
           </div>
           <div class="modal-footer">
             <button
-            id="cancel-button"
+              id="cancel-button"
               type="button"
               class="btn btn-secondary"
               data-dismiss="modal"
@@ -164,6 +172,10 @@
         </div>
       </div>
     </div>
+
+    <footer style="align-items: center; position: relative; width: 100%; justify-content: space-around; left: 50%; transform:  translate(-16%);; ">
+      Hecho por Jonatan. Copyright © Todos los derechos reservados
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

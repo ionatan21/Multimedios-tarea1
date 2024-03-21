@@ -3,34 +3,30 @@
   font-size: 28px;
 }
 
-
 #desktop {
-    opacity: 0.5;
-  }
-  #mobile {
+  opacity: 0.5;
+}
+#mobile {
+  opacity: 0.5;
+   
+}
 
-    opacity: 0.5;
-    }
+#paginacion_device{
+  
+  width: 100px;
+  box-shadow: 0px 10px 10px gray;
+}
 
 #desktop:hover {
   scale: 1.1;
   opacity: 2;
+
 }
 #mobile:hover {
-    scale: 1.1;
-    opacity: 2;
-  }
-
-
-.logo {
-  width: 30px;
-  height: 30px;
+  scale: 1.1;
+  opacity: 2;
 }
-.container-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 #Main-logo {
   display: inline-flex;
 }
@@ -39,16 +35,6 @@
   border-bottom: 1px solid lightgray;
 }
 
-.margen {
-  margin-top: 100px;
-}
-.seg-ter {
-  margin-top: 5px;
-}
-.card {
-  margin: 40px auto;
-  width: 600px;
-}
 .card-header {
   padding: 0.75rem 15px;
 }
@@ -63,10 +49,22 @@
 .card-body {
   padding: 15px;
 }
-.comentario {
-  color: #cdcccc;
+
+body{
+  background-color: aliceblue;
+}
+
+button {
+  outline: none;
+}
+
+.comment-section {
+  color: #ffffff;
   display: inline-block;
   width: 88%;
+  border: 1px solid gray;
+  outline: none;
+  box-shadow: none;
 }
 
 #Main-logo:hover {
@@ -81,17 +79,20 @@
 
 #success:hover {
   scale: 1.03;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 img {
   width: 100%;
   height: 255px;
   display: block;
-  padding: 2px;
+  padding: 3px;
 }
 
+
 .row img:hover {
-  scale: 1.01;
-  z-index: 1000;
+  scale: 1.02;
+  z-index: 100;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #cancel-button:hover {
@@ -106,14 +107,64 @@ img {
   display: none;
 }
 
-#heart-reaction:hover {
-  color: red;
+#heart-reaction {
   background-color: transparent;
   border: none;
+  outline: none;
+  scale: 1.2;
+  box-shadow: none;
+}
+
+#heart-reaction:focus {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+
+#heart-reaction:hover img {
   scale: 1.2;
 }
 
 #close:hover {
   background-color: red;
   color: white;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+.container-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.margen {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  z-index: 100;
+  transform:  translate(-50%, -15%);
+}
+
+.seg-ter {
+  margin-top: 5px;
+}
+
+.card {
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
+  margin: 45px auto;
+  width: 600px;
+}
+
+.photos{
+  margin-top: 70px;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+#settings:hover{
+scale: 1.1;
 }
